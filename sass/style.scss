@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./TTLakes-Medium.woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./TTLakesCondensed-Bold.woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./TTLakes-Regular.woff');
+    font-weight: 300;
+}
+
+body {
+    font-family: TT Lakes;
+    font-weight: 400;
+}
+
+
+.main {
+    font-size: 16px;
+}
+
+.main_size_s {
+    padding: 10px;
+    float: left;
+    max-width: 320px;
+    min-height: 820px;
+}
+
+.main__burger-btn, .main__search {
+    display: inline-block;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+.main__logo {
+    display: inline-block;
+    margin: 0 75px 0 17px;
+}
+.main__burger-btn::after, .main__burger-btn::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    top: 9%;
+    left: calc(1% + 3px);
+    transform: rotate(45deg);
+    background-color: white;
+}
+.main__burger-btn::before {
+    transform: rotate(-45deg);
+}
+
+.menu_size-s {
+    line-height: 45px;
+    color: #1B1C21;
+    margin-top: 50px;
+    margin-left: 24px;
+    font-weight: 700;
+}
+.menu_size-s a {
+    color: inherit;
+    text-decoration: none;
+}
+.menu_size-s div:not(.checked):hover {
+    transition: 0.6s all;
+    transform: scale(1.2);
+}
+
+.checked::before {
+    content: '';
+    background-color: #41F6D7;
+    width: 5px;
+    left: 0;
+    height: 32px;
+    position: absolute;
+}
+.checked {
+    color: #7E7E82;
+}
+
+.footer_mod {
+    margin-top: 70px;
+    margin-left: 24px;
+    color: #1B1C21;
+}
+
+.footer_mod > div:last-child {
+    margin-right: 0;
+}
+.footer__phone, .footer__chat, .footer__contact {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.footer__mail {
+    display: block;
+    margin-top: 20px;
+}
+.footer__mail a:hover {
+    transform: scale(1.2);
+    transition: 0.6s all;
+    color: orange;
+}
+.footer__mail a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__number {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.footer__number:hover {
+    transform: scale(1.2);
+    transition: 0.6s all;
+}
+.footer__number a {
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.lang-block {
+    margin-top: 25px;
+    display: block;
+}
+.lang-block div {
+    margin-right: 5px;
+    font-weight: 400;
+    color: #1B1C21;
+    display: inline-block;
+    cursor: pointer;
+}
+.lang-block div:last-child {
+    margin-right: 0;
+}
+.lang-block div:hover {
+    transform: scale(1.2);
+    transition: 0.6s all;
+}
+.lang-check {
+    color: #7E7E82 !important;
+}
+
+
